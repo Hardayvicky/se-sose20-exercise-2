@@ -55,10 +55,8 @@ public class PrettyPrintParserTest {
     };
 
     /*
-     * If expected methods do not exist,
-     * an exception will be thrown to causing the test to fail!
+     * If expected methods do not exist, an exception will be thrown causing the test to fail!
      */
-
     @Test
     public void enterMemberTest() throws Exception {
         Method enter = raytracer.PrettyPrintParser.class.getDeclaredMethod("enter", StartElement.class);

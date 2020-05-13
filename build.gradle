@@ -23,10 +23,16 @@ application {
     mainClassName = javaMainClass
 }
 
-// test {
-//     dependsOn cleanTest
-//     testLogging.showStandardStreams = true
-// }
+test {
+    dependsOn cleanTest
+    testLogging.showStandardStreams = true
+}
+
+task(score, dependsOn: 'classes', type: JavaExec) {
+    dependsOn test
+        main = 'score'
+        classpath = sourceSets.main.runtimeClasspath
+}
 
 repositories {
     // Use jcenter for resolving dependencies.
