@@ -1,13 +1,11 @@
-[![Build Status](https://travis-ci.com/mmbuw-courses/se-sose20-exercise-1.svg?token=vuni5zSQUmyYTd2SHV6a&branch=master)](https://travis-ci.com/mmbuw-courses/se-sose20-exercise-1)
+[![Build Status](https://travis-ci.com/mmbuw-courses/se-sose20-exercise-2.svg?token=vuni5zSQUmyYTd2SHV6a&branch=master)](https://travis-ci.com/mmbuw-courses/se-sose20-exercise-2)
 
 # Software Engineering Summer Semester 2020
 
 - [ General Information ](#general-information)
 - [ Getting Started ](#getting-started)
   - [ Prerequisites ](#prerequisites)
-  - [ Running ](#running-testing-and-generating-evaluation-reports)
-  - [ Testing ](#running-testing-and-generating-evaluation-reports)
-  - [ Generating an evaluation report ](#running-testing-and-generating-evaluation-reports)
+  - [ Building the project ](#running-testing-and-generating-evaluation-reports)
 - [ Continuous integration: ](#continuous-integration)
   - [ Working with Travis ](#working-with-travis)
   - [ Updating the starter code ](#updating-the-exercise-starter-code-----important)
@@ -38,18 +36,12 @@ author's language, thoughts, ideas, or expressions as one's own.
 
 ## Getting started
 
-The commands provided as part of this instructional readme need to
-be run using a terminal within the repository root directory.
-
-- [x] [ *Nix terminal ](https://en.wikipedia.org/wiki/Unix_shell) (macOS, Linux distributions, etc.)
-- [x] [ Git Bash ](https://gitforwindows.org) terminal (for Windows)
-
 ### Prerequisites
 [JDK11](https://jdk.java.net/11/)
 
-[Gradle](https://gradle.org/install/)
+[Gradle](https://gradle.org/install/) 
 
-Any higher JDK version will work just we all!
+Installation of Gradle is optional. Gradle wrapper `gradlew` is provided as part of the project in the project root directory. 
 
 ### Project Structure
 ```bash
@@ -89,30 +81,16 @@ se-sose20-exercise-1
 ```
 All exercise resources are available in the `./resources directory`.
 
-### Running, Testing, and generating Evaluation Reports
-*To run the main application, use:*
+### Building the project
+On macOS, Linux, or the GitBash (for Windows)
 ```
-gradle run
+./gradlew build
 ```
-
-*To test the application (using the provided test suite) use:*
+In the Windows Powershell:
 ```
-gradle test
+gradlew.bat build
 ```
-
-To generate a test case score (mark allocation based on passing tests), use:
-```
-gradle score
-```
-- This is an experimental feature still under development!
-
-`Tip:`
-```
-gradle clean
-gradle build
-```
-Running `gradle build` is the same as running `gradle run` and `gradle test`, which
-may come in handy in your own local development cycles.
+**n.b.**: These commands will not work without the JDK 11 prerequisite!
 
 <a name="who"></a>
 ## Continuous integration
