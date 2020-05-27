@@ -155,7 +155,6 @@ gradlew.bat build
 *If you opted to install Gradle:* 
 * for macOS, Linux, or the GitBash(cross platform tool) 
 ```
-```
 gradle build
 ```
 
