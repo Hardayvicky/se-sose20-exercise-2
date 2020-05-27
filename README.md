@@ -60,7 +60,7 @@ it is **imperative** to always have a solution for the previous exercise.
 For this reason,
 each new exercise will be presented with a sample solution for the previous exercise.
 
-######simply put;
+###### simply put;
 
 `current Exercise` -- depends on -- `previous Exercise solution`
 
